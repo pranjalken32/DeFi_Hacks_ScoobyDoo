@@ -10,14 +10,16 @@
     "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
-    "sass": "^1.49.7"
+    "sass": "^1.49.7",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.4.36"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/cruip/open-react-template.git"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -3,7 +3,9 @@ import { useLocation, Switch } from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
-
+import ViewCertificate from "./components/sections/ViewCertificate"
+import IssueCertificate from "./components/sections/IssueCertificate"
+import ViewCertificateCred from "./components/sections/ViewCertificateCred"
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
@@ -37,6 +39,9 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/view-certificate" component={ViewCertificate} layout={LayoutDefault} />
+          <AppRoute exact path="/Cred/:id" component={ViewCertificateCred} layout={LayoutDefault} />
+          <AppRoute exact path="/issue-certificate" component={IssueCertificate} layout={LayoutDefault} />
         </Switch>
       )} />
   );
